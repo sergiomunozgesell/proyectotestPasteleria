@@ -12,7 +12,13 @@ let PORT = process.env.PORT;
 app.use(express.json());
 
 
+app.get('/', (req,res)=>{
+    res.send('Bienvenido a app.js')
+})
 
 
-app.listen();
+
+app.listen(PORT,
+    console.log(`Aplicación corriendo en puerto http://localhost:${PORT}`)
+);
 
