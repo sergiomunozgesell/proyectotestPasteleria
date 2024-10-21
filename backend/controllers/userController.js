@@ -8,7 +8,7 @@ export const getusers = async (req,res) =>{
             return res.status
         } 
 
-        return res.status(200).send(usuarios);
+        return res.status(200).send({usuarios});
 
 
     } catch (error) {

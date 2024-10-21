@@ -5,6 +5,7 @@ import { dbconn } from "./config/db.js";
 import { userRoute } from "./routes/userRouter.js";
 
 dbconn();
+
 export const app = express();
 
 dotenv.config()
@@ -12,9 +13,9 @@ dotenv.config()
 let PORT = process.env.PORT;
 
 /** middlewares */
+app.use(cors({origin: '*'}));
 app.use(express.json());
 app.use('/api/user',userRoute);
-app.use(cors("*"));
 
 
 app.get('/', (req,res)=>{

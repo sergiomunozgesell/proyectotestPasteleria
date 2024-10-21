@@ -1,0 +1,24 @@
+:root{
+
+
+}
+
+*{
+ 
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+.maincon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh auto;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(253, 144, 1);
+}
